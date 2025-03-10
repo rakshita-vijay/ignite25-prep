@@ -5,7 +5,7 @@ int num2 = 0;
 char op = 'c';
 
 void printPara() {
-  printf("+ - - - - - - - - - - - - - - - + \n");
+  printf("+ - - - - - - - - - - - - - - - - - - + \n");
   printf("Enter the first number: ");
   scanf("%d", &num1);
 
@@ -52,17 +52,18 @@ int main() {
 
     float res = doCalc();
 
-    printf("%d %c %d = %f\n", num1, op, num2, res);
+    printf("\n%d %c %d = %f\n", num1, op, num2, res);
 
-    printf("+ - - - - - - - - - - - - - - - + \n");
+    printf("+ - - - - - - - - - - - - - - - - - - + \n");
 
-    printf("Do you wish to do another operation? Enter 1 for yes, 0 for no: ");
+    printf("\nDo you wish to do another operation? Enter 1 for yes, 0 for no: ");
     scanf("%d", &choice);
+    printf("\n");
 
     if (choice == 1) {
       continue;
     } else {
-      printf("+ - - - - - - - - - - - - - - - + \n");
+      printf("+ - - - - - - - - - - - - - - - - - - + \n");
     }
   }
 }
